@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts: Event State Render Starter</title>
+  <link rel="stylesheet" href="./posts.css">
+  <script defer src="./posts.js"></script>
+</head>
+
+<body>
+  <h1>Add Post</h1>
+
+  <form
+    onSubmit="onSubmitPost(event)"
+    >
+    <label for="content-input">Message Content:</label>
+    <textarea id="content-input"></textarea>
+
+    <label for="author-input">Author:</label>
+    <input id="author-input" type="text" />
+
+    <button id="submit-button">Submit</button>
+  </form>
+
+  <h1>Posts</h1>
+
+  <table>
+    <thead>
+      <th>Message Content</th>
+      <th>Author</th>
+    </thead>
+    <tbody id="posts-table-body">
+      <tr>
+        <td>No Posts Yet!</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
